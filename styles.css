@@ -11,7 +11,7 @@ body {
   gap: 50px;
   justify-content: center;
   padding: 150px 0;
-  background: url(resources/images/starry_night.webp), #120845;
+  background: url(resources/images/starry_night.webp), hsl(250, 79%, 15%);
   background-size: 1024px;
   color: #ebe8fc;
 }
@@ -33,6 +33,20 @@ body {
 
 .social-links img:hover {
   transform: translateY(-5px) scale(1.1);
+}
+
+.bg-title-ref {
+  position: relative;
+}
+
+.bg-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -5;
+  height: 144px;
+  filter: hue-rotate(250deg) saturate(89%) brightness(27%);
+  opacity: 0.2;
 }
 
 .project-card {
