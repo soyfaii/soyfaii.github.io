@@ -1,0 +1,67 @@
+@import url("styles/fonts.css");
+@import url("styles/shortcuts.css");
+
+body {
+  margin: 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  padding: 150px 0;
+  background: url(resources/images/starry_night.webp), #120845;
+  background-size: 1024px;
+  color: #ebe8fc;
+}
+
+.hero-chara {
+  /* breath animation */
+  animation: floating 6s ease-in-out infinite;
+}
+
+.social-links {
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links img {
+  transition: transform 0.2s;
+}
+
+.social-links img:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+
+.project-card {
+  width: 350px;
+  background-color: #10006133;
+  box-shadow: #808080 8px 8px 0px;
+}
+
+.link-button {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #5533ff;
+  padding: 14px 20px 10px 20px;
+  align-self: flex-start;
+}
+
+.link-button:hover {
+  background-color: #4422cc;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
