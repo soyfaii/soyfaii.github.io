@@ -1,5 +1,6 @@
 @import url("styles/fonts.css");
 @import url("styles/shortcuts.css");
+@import url("styles/animations.css");
 
 body {
   margin: 0;
@@ -14,6 +15,7 @@ body {
   background: url(resources/images/starry_night.webp), hsl(250, 79%, 15%);
   background-size: 1024px;
   color: #ebe8fc;
+  animation: space-infinite-scroll 120s linear infinite;
 }
 
 .hero-chara {
@@ -66,16 +68,4 @@ body {
 
 .link-button:hover {
   background-color: #4422cc;
-}
-
-@keyframes floating {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
 }
