@@ -19,8 +19,10 @@ body {
 }
 
 .hero-chara {
-  /* breath animation */
   animation: floating 6s ease-in-out infinite;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
 }
 
 .social-links {
@@ -31,6 +33,9 @@ body {
 
 .social-links img {
   transition: transform 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
 }
 
 .social-links img:hover {
