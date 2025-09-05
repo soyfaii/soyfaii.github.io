@@ -1,6 +1,7 @@
 @import url("styles/fonts.css");
 @import url("styles/shortcuts.css");
 @import url("styles/animations.css");
+@import url("styles/colors.css");
 
 body {
   margin: 0;
@@ -12,9 +13,9 @@ body {
   gap: 50px;
   justify-content: center;
   padding: 150px 0;
-  background: url(resources/images/starry_night.webp), hsl(250, 79%, 15%);
+  background: url(resources/images/starry_night.webp), var(--starry-night-bg);
   background-size: 1024px;
-  color: #ebe8fc;
+  color: var(--starry-night-text);
   animation: space-infinite-scroll 120s linear infinite;
 }
 
@@ -53,24 +54,27 @@ body {
   z-index: -5;
   height: 144px;
   filter: hue-rotate(250deg) saturate(89%) brightness(27%);
+  @media screen and (prefers-color-scheme: dark) {
+    filter: hue-rotate(250deg) saturate(89%) brightness(27%) invert(1);
+  }
   opacity: 0.2;
 }
 
 .project-card {
   width: 350px;
-  background-color: #10006133;
-  box-shadow: #808080 8px 8px 0px;
+  background-color: var(--container-bg);
+  box-shadow: var(--secondary-container-bg) 8px 8px 0px;
 }
 
 .link-button {
   display: block;
   text-decoration: none;
   color: white;
-  background-color: #5533ff;
+  background-color: var(--accent-color);
   padding: 14px 20px 10px 20px;
   align-self: flex-start;
 }
 
 .link-button:hover {
-  background-color: #4422cc;
+  background-color: var(--accent-color-hover);
 }

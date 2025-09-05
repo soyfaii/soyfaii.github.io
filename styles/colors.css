@@ -1,0 +1,17 @@
+:root {
+  --starry-night-bg: #120845;
+  --starry-night-text: #ebe8fc;
+  --container-bg: #ebe8fc;
+  --secondary-container-bg: #c1bef9;
+  --accent-color: #884aff;
+  --accent-color-hover: #7733ff;
+
+  @media screen and (prefers-color-scheme: dark) {
+    --container-bg: #1e1b3c;
+    --secondary-container-bg: #3a3470;
+    --accent-color: #7755ff;
+    --accent-color-hover: #6644cc;
+  }
+
+  color-scheme: light dark;
+}
