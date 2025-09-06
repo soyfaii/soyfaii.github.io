@@ -106,3 +106,7 @@ body {
 .link-button:hover {
   background-color: var(--accent-color-hover);
 }
+
+.link-button:first-of-type:not(:last-of-type) {
+  margin-bottom: 10px;
+}
