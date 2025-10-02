@@ -44,6 +44,8 @@ body {
   -webkit-user-select: none;
   -webkit-user-drag: none;
   width: 100%;
+  filter: brightness(0) saturate(100%) invert(90%) sepia(6%) saturate(1348%)
+    hue-rotate(202deg) brightness(103%) contrast(98%);
 }
 
 .social-links {
@@ -57,6 +59,8 @@ body {
   user-select: none;
   -webkit-user-select: none;
   -webkit-user-drag: none;
+  filter: brightness(0) saturate(100%) invert(90%) sepia(6%) saturate(1348%)
+    hue-rotate(202deg) brightness(103%) contrast(98%);
 }
 
 .social-links img:hover {
