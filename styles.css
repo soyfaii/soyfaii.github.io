@@ -110,3 +110,9 @@ body {
 .link-button:first-of-type:not(:last-of-type) {
   margin-bottom: 10px;
 }
+
+footer {
+  padding: 3em 1em;
+  justify-content: center;
+  background-color: #ffffff1a;
+}
